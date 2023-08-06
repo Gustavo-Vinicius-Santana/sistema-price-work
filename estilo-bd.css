@@ -1,0 +1,31 @@
+.conteiner-dados1{
+    margin-top: 15px;
+    padding-top: 5px;
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: white;
+    border: solid gray 1px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+table, td, tr, th{
+    border: solid black 1px;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+@media screen and (min-width: 800px){
+    .conteiner-dados1{
+        width: 50%;
+        margin: auto;
+        margin-top: 15px;
+        padding-top: 5px;
+    }
+}

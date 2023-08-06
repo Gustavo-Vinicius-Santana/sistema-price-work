@@ -1,0 +1,324 @@
+/*CONFIGURAÇÕES GERAIS*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.t1{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/*HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.head-1{
+    display: block;
+}
+.head-2{
+    display: block;
+}
+.head-3{
+    display: block;
+}
+.perfil{
+    cursor: pointer;
+}
+
+
+/*O MENU*/
+body{
+    overflow-x: hidden;
+}
+.menu{
+    cursor: pointer;
+}
+.conteiner-menu{
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    width: 50%;
+    height: calc(100vh - 35px);
+    z-index: 1000;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+.conteiner-menu.active{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.list-menu{
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sel{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.sel:hover{
+    color: gray;
+}
+
+#check{
+    display: none;
+}
+.switch{
+    position: relative;
+    background-color: gray;
+    width: 50px;
+    height: 15px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.slider{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+#check:checked ~ .switch{
+    background-color: white;
+}
+#check:checked ~ .switch .slider{
+    background-color: black;
+    transform: translateX(35px);
+    -webkit-transform: translateX(35px);
+    -moz-transform: translateX(35px);
+    -ms-transform: translateX(35px);
+    -o-transform: translateX(35px);
+}
+
+.div-btn2{
+    display: flex;
+    justify-content: center;
+}
+.btn2{
+    margin-top: 8px;
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+    background-color: transparent;
+    border: solid white 1px;
+    color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+.btn2:hover{
+    border: solid gray 1px;
+    color: black;
+    background-color: white;
+}
+
+/*FORMULARIO*/
+
+.corpo-principal{
+    width: 99%;
+    margin: auto;
+    overflow: hidden;
+}
+.div-input{
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.input-1{
+    width: 50%;
+    height: 25px;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.servicos{
+    width: 50%;
+    margin: auto;
+}
+.div-btn{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    margin-top: 8px;
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+    background-color: transparent;
+    border: solid black 1px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    border: solid white 1px;
+}
+.btn.dark3{
+    border: solid white 1px;
+    color: white;
+}
+.btn.dark3:hover{
+    border: solid black 1px;
+    background-color: white;
+    color: black;
+}
+.select{
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/*TELA LOGIN*/
+.div-fecha{
+    display: flex;
+    justify-content: right;
+}
+.fechar{
+    color: red;
+    cursor: pointer;
+}
+.janela1{
+    margin: auto;
+    width: 90%;
+    height: 50%;
+}
+.div-input{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.input-2{
+    width: 50%;
+    height: 25px;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/*TELA DE CADASTRO*/
+.fechar2{
+    color: red;
+    cursor: pointer;
+}
+.janela2{
+    margin: auto;
+    width: 90%;
+    height: 50%;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (min-width: 800px){
+    .conteiner-menu{
+        width: 25%;
+    }
+    .servicos{
+        width: 25%;
+    }
+    .input-1{
+        width: 25%;
+    }
+    .janela1{
+        margin: auto;
+        width: 30%;
+        height: 80%;
+    }
+    .janela2{
+        margin: auto;
+        width: 30%;
+        height: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
