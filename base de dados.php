@@ -65,7 +65,7 @@
             <tbody>
             <?php
                 $busc1 = "select * from logins";
-                $comando1 = mysqli_query($con1, $busc1);
+                $comando1 = mysqli_query($con, $busc1);
                 while($dados1 = $comando1->fetch_assoc()){
                     ?>
                 <tr>
@@ -91,7 +91,7 @@
                 <tbody>
                 <?php
               $busc2 = "select * from passagens";
-              $comando2 = mysqli_query($con2,$busc2);
+              $comando2 = mysqli_query($con,$busc2);
               while($dados2 = $comando2->fetch_assoc()){
                 ?>
                 <tr>
