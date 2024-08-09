@@ -66,12 +66,12 @@
         </div>
 
         <div class="list-menu sel">
-            <a href="https://github.com/gusvinicius" target="_blank">
+            <a href="https://github.com/gustavo-vinicius-santana" target="_blank">
                 <span class="material-icons md-24">
                     rocket_launch
                 </span>
             </a>
-            <a href="https://github.com/gusvinicius" target="_blank">
+            <a href="https://github.com/gustavo-vinicius-santana" target="_blank">
                 <h4>PORTIFOLIO</h4>
             </a>
         </div>
@@ -165,7 +165,7 @@
      $host_banco = "localhost";
      $usuario_banco = "root";
      $senha_banco = "";
-     $banco_de_dados = "banco1";
+     $banco_de_dados = "bd_sistema_price_work";
      $con = mysqli_connect($host_banco, $usuario_banco, $senha_banco, $banco_de_dados);
          if(!$con){
              die("Connection Failed" .mysqli_connect_errno());
@@ -253,7 +253,7 @@
         $host_banco = "localhost";
         $usuario_banco = "root";
         $senha_banco = "";
-        $banco_de_dados = "banco1";
+        $banco_de_dados = "bd_sistema_price_work";
         $con = mysqli_connect($host_banco, $usuario_banco, $senha_banco, $banco_de_dados);
             if(!$con){
                 die("Connection Failed" .mysqli_connect_errno());
